@@ -9,7 +9,6 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm install'
-                sh 'rm -rf node_modules && npm install' 
             }
         }
         stage('Test') {
